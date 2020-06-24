@@ -1,0 +1,56 @@
+// always place the first three folders top so this becomes the base for other folders 
+@import "abstracts/functions";
+@import "abstracts/mixins";
+@import "abstracts/variables"; // this is the variables folder where all the variables are stored @import "base/base"; // place where the basic definiation of our project is stored
+@import "base/base";
+@import "base/animation"; // animations folder where all the animations are stored 
+@import "base/typography";
+@import "base/utilites";
+@import "components/button";
+@import "layout/grid"; // folder where components are created like button which is again resuable
+@import "layout/header"; //place where layouts of the page are created 
+@import "page/home";
+//no underscore and fileextension required while importing the file
+
+/*
+colors 
+light green : #7ed56f
+medium green: #55c57a
+dark green: #28b485
+
+ */
+
+// intializing variables in sass
+// main point of using nesting for adding concept of encapsulation
+// getting started with css architecture 
+// building 7-1 pattern means one main sass files and 7 sub files
+// so inside sass folder a basefolder is created 
+//this file will bne there for real low level basics such resets styles for html and for body element selectors
+// files created inside the base folder should be one partial file
+// partialfiles should alwas start with _ for ex _base.sass 
+// at last all partial files are imported to main sass file using import function 
+// import "file path"
+// abstracts folder 
+// here i am going to add code that is not going to give any css output
+// for example mixins ,functions, variables which we are going to reuse code again and again
+// layout page contains the part of the lapout then which is added to the global layout
+// specifix pages folder contains folder related to specific page 
+
+/* &:link, */
+
+
+/* link sets ur defaut color  */
+
+
+/* button part  */
+
+
+/* ====================================================================== */
+
+
+/* =========================================================================== */
+
+
+/* 
+ both document object model and cssom(css object model) both together form the render tree which loads the webpage finally
+ */

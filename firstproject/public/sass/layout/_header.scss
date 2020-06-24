@@ -1,0 +1,58 @@
+.header {
+    height: 95vh;
+    /* 
+     above line tells us that at every point the height of this box should be 95%
+     */
+    background-image: linear-gradient( to right top, rgba($color-primary-light, 0.8), rgba($color-orange, 0.6)), url("../img/hero.jpg");
+    background-size: cover;
+    /* what cover does is it will adjust according to his height and wwidth of the hreader file  */
+    -webkit-clip-path: polygon(0 0, 100% 0%, 100% 73%, 0 100%);
+    clip-path: polygon(0 0, 100% 0%, 100% 73%, 0 100%);
+    position: relative;
+    &__logo-box {
+        position: absolute;
+        top: 4rem;
+        left: 4rem;
+    }
+    &__logo {
+        height: 3.5rem;
+    }
+    &__logo:hover {
+        animation: moveinright .1s ease-out;
+    }
+    &__text-box {
+        position: absolute;
+        top: 40%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        text-align: center;
+    }
+}
+
+.heading-primary {
+    color: #ffffff;
+    text-transform: uppercase;
+    backface-visibility: hidden;
+    /* is used remove the default error caused during animation  */
+    margin-bottom: 6rem;
+    &--main {
+        /* span elelment is by default an display property so its an inline elelment  so use block property*/
+        display: block;
+        font-size: 6rem;
+        font-weight: 400;
+        letter-spacing: 3.5rem;
+        animation-name: moveInLeft;
+        animation-duration: 3s;
+        animation-timing-function: ease-out;
+    }
+    &--sub {
+        display: block;
+        font-size: 2rem;
+        font-weight: 700px;
+        letter-spacing: 1.7rem;
+        animation-name: moveinright;
+        animation-duration: 3s;
+        animation-timing-function: ease-out;
+        /* animation-iteration-count: 3; tells how many times the animation should repeat */
+    }
+}

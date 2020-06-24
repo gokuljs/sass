@@ -1,0 +1,62 @@
+.btn {
+    &:link,
+    &:visited {
+        text-transform: uppercase;
+        text-decoration: none;
+        padding: 1.2rem 4rem;
+        display: inline-block;
+        border-radius: 10rem;
+        transition: all .2s;
+        position: relative;
+        font-size: 1.6rem;
+    }
+    /* btn white is only playing a major role in coloring ur elements  */
+    &--white {
+        background-color: #fff;
+        color: #777;
+    }
+    /* hover works when ur mouse pointer goes above the word  */
+    &:hover {
+        transform: translateY(-.3rem);
+        box-shadow: 0 1rem 2rem rgba($color-black, 0.2);
+        &::after {
+            transform: scaleX(1.4) scaleY(1.6);
+            opacity: 0;
+        }
+    }
+    /*
+ active works  hold ur mouse on it 
+ 
+  */
+    &:active {
+        transform: translateY(-.1rem);
+        /* background-color: black; */
+        box-shadow: 0 0.5rem 2rem rgba($color-black, 0.2); // it only works in sass specifying html color in sass 
+    }
+    /*  
+     psuedo classes are special classes f a selector 
+     where button is the one of the sudo classes which is similiar hover element
+     so here link is an howver element for btn0 
+     
+     */
+    /* after psuedo elelments  */
+    &::after {
+        content: "";
+        display: inline-block;
+        height: 100%;
+        width: 100%;
+        border-radius: 10rem;
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: -1;
+        transition: all .4s;
+    }
+    &--white::after {
+        background-color: #fff;
+    }
+    &--animated {
+        animation: moveinbutton 3s ease-out .35s;
+        animation-fill-mode: backwards;
+    }
+}

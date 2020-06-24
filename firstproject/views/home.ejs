@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/stylesheets/app.css">
+    <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@1,300&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+
+    <!-- <h1>welcome to home page</h1> -->
+    <!--BEM model of development block element model   -->
+    <!-- bem is the consistent way of naming our classes  -->
+    <!-- BEM = BLOCK ELEMENT MODIFIER  -->
+    <!--
+        .block{}
+        .block__element{
+        }
+        .block__element--modifier{}
+      -->
+
+    <header class="header">
+        <div class="header__logo-box">
+            <!-- double underscore is used to seprate block and element  -->
+            <!-- here header is the block 
+                logo-box is the element 
+            -->
+            <img src="img/logo-white.png" alt="logo" class="header__logo">
+        </div>
+
+
+        <div class="header__text-box">
+            <!-- heding-primary acts has an completely diffrent block this can be used somewhere else  ] -->
+            <h1 class="heading-primary">
+                <!-- heading-primary--main,heading-primary--sub this both acts as an modifiers -->
+                <!-- because they just give out slightily diffrent version of the class  -->
+
+                <span class="heading-primary--main"> outdoors</span>
+                <span class="heading-primary--sub">is where life happens</span>
+            </h1>
+            <!-- btn acts as an standalone block -->
+            <!-- btn-white and btn-animated act has an modifiers for the btn  -->
+            <a href="#" class="btn btn--white btn--animated">Discover our tours</a>
+        </div>
+
+    </header>
+
+
+    <section class="grid-test">
+        <div class="row">
+            <div class="col-1-0f-2">
+                class-1-0f-2
+            </div>
+            <div class="col-1-0f-2">
+                class-1-0f-2
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-1-0f-3">
+                class-1-0f-2
+            </div>
+            <div class="col-1-0f-3">
+                class-1-0f-2
+            </div>
+            <div class="col-1-of-3">
+                class-1-of-3
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-1-0f-3">
+                class-1-0f-2
+            </div>
+            <div class="col-2-0f-3">
+                class-1-0f-2
+            </div>
+
+        </div>
+        <div class="row">
+            <div class="col-1-0f-4">
+                class-1-0f-2
+            </div>
+            <div class="col-1-0f-4">
+                class-1-0f-2
+            </div>
+            <div class="col-1-of-4">
+                class-1-of-3
+            </div>
+            <div class="col-1-of-4">
+                class-1-of-3
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-1-0f-4">
+                class-1-0f-2
+            </div>
+            <div class="col-1-0f-4">
+                class-1-0f-2
+            </div>
+            <div class="col-2-of-4">
+                class-1-of-3
+            </div>
+
+        </div>
+        <div class="row">
+            <div class="col-1-0f-4">
+                class-1-0f-2
+            </div>
+            <div class="col-3-0f-4">
+                class-1-0f-2
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- 
+        getting started with sass 
+        sass is an css preprocessor 
+        at the end sass is converted into regular css code 
+
+
+        main features of sass
+
+        variables: for reusable values such as colors,font-sizes,spacing
+        Nesting: to nest selectore  inside one another which allows to write less code 
+        operators: mathematical operators present inside the sass
+        partials and imports: this allows us to right css in diffrent files and at the end allows them to group it into one file
+        Mixins: to write reusasble pices od css 
+        functions: similiar to mixins but the produced value can be used later
+        extends:to make diffrent selectors inherit declarations that are common to all of them
+        control directives: for writting complex codes using conditionals and loops
+          
+     -->
+
+
+</body>
+
+</html>
