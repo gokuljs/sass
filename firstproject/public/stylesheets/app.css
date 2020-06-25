@@ -120,12 +120,16 @@ body {
   margin-bottom: 8rem; }
   .row:not(:last-child) {
     margin-bottom: 8rem; }
+  .row::after {
+    content: "";
+    display: table;
+    clear: both; }
   .row .col-1-0f-2 {
-    width: calc(100% - 100px);
+    width: calc((100% - 7rem) / 2);
     background-color: orangered;
     float: left; }
     .row .col-1-0f-2:not(:last-child) {
-      margin-right: 60rem; }
+      margin-right: 7rem; }
 
 .header {
   height: 95vh;

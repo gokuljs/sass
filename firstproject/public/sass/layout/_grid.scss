@@ -9,9 +9,11 @@
         // we dont want the last child to have margin bottom so wat not does is its does not apply the value to the last child
         margin-bottom: $gutter-vertical;
     }
+    @include clearfix;
     .col-1-0f-2 {
         //calc() allows us to do mathematical calculations 
-        width: calc(100% - 100px); // # function is for working sass inside css 
+        width: calc((100% - #{$gutter-horizontal}) / 2); // # function is for working sass inside css 
+        // inside calc is there all are case sensitive proper identation is required 
         background-color: orangered;
         float: left;
         &:not(:last-child) {

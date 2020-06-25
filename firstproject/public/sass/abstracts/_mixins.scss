@@ -1,0 +1,9 @@
+// clearfix is used remove the error when we use float and hieght collapses 
+// creating a mixin
+@mixin clearfix {
+    &::after {
+        content: "";
+        display: table;
+        clear: both;
+    }
+}
