@@ -28,31 +28,3 @@
         text-align: center;
     }
 }
-
-.heading-primary {
-    color: #ffffff;
-    text-transform: uppercase;
-    backface-visibility: hidden;
-    /* is used remove the default error caused during animation  */
-    margin-bottom: 6rem;
-    &--main {
-        /* span elelment is by default an display property so its an inline elelment  so use block property*/
-        display: block;
-        font-size: 6rem;
-        font-weight: 400;
-        letter-spacing: 3.5rem;
-        animation-name: moveInLeft;
-        animation-duration: 3s;
-        animation-timing-function: ease-out;
-    }
-    &--sub {
-        display: block;
-        font-size: 2rem;
-        font-weight: 700px;
-        letter-spacing: 1.7rem;
-        animation-name: moveinright;
-        animation-duration: 3s;
-        animation-timing-function: ease-out;
-        /* animation-iteration-count: 3; tells how many times the animation should repeat */
-    }
-}
