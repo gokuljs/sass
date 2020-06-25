@@ -1,0 +1,21 @@
+.row {
+    max-width: $grid-width;
+    // max-width = what max-width does if ur view port size is less than that of the size of the max-width size then 
+    // it occupies the complete space 
+    background-color: #eee;
+    margin: 0 auto; // trick to align anything in center
+    margin-bottom: $gutter-vertical;
+    &:not(:last-child) {
+        // we dont want the last child to have margin bottom so wat not does is its does not apply the value to the last child
+        margin-bottom: $gutter-vertical;
+    }
+    .col-1-0f-2 {
+        //calc() allows us to do mathematical calculations 
+        width: calc(100% - 100px); // # function is for working sass inside css 
+        background-color: orangered;
+        float: left;
+        &:not(:last-child) {
+            margin-right: $gutter-horizontal;
+        }
+    }
+}
