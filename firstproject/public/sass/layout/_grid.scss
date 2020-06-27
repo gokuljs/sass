@@ -2,7 +2,7 @@
     max-width: $grid-width;
     // max-width = what max-width does if ur view port size is less than that of the size of the max-width size then 
     // it occupies the complete space 
-    background-color: #eee;
+    // background-color: #eee;
     margin: 0 auto; // trick to align anything in center
     margin-bottom: $gutter-vertical;
     &:not(:last-child) {
@@ -14,7 +14,7 @@
     //^ this tells us that class starting with col-
     // "*" this tells us that class should contain col- 
     [class^="col-"] {
-        background-color: orangered;
+        // background-color: orangered;
         float: left;
         &:not(:last-child) {
             margin-right: $gutter-horizontal;
