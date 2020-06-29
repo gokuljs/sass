@@ -220,7 +220,7 @@ body {
     transform: scale(0.9); }
 
 .feature-box {
-  background-color: rgba(255, 255, 255, 0.8);
+  background-color: rgba(0, 0, 0, 0.8);
   font-size: 1.5rem;
   padding: 2.5rem;
   text-align: center;
@@ -270,7 +270,7 @@ body {
   /* 
      above line tells us that at every point the height of this box should be 95%
      */
-  background-image: linear-gradient(to right top, rgba(126, 213, 111, 0.4), rgba(255, 165, 0, 0.6)), url("../img/myfish.jpg");
+  background-image: linear-gradient(to right top, rgba(126, 213, 111, 0.2), rgba(255, 165, 0, 0.3)), url("../img/myspace.jpg");
   background-size: cover;
   /* what cover does is it will adjust according to his height and wwidth of the hreader file  */
   -webkit-clip-path: polygon(0 0, 100% 0%, 100% 73%, 0 100%);
