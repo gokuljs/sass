@@ -226,12 +226,13 @@ body {
   text-align: center;
   border-radius: .3rem;
   box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.8);
-  transition: transform .3s; }
+  transition: transform .3s;
+  transform: skewY(7deg); }
   .feature-box__icon {
     font-size: 6rem;
     margin: .5rem;
     display: inline-block;
-    background-image: linear-gradient(to right, #7ed56f, orange, #28b485);
+    background-image: linear-gradient(to right, #cc0033, #7a0085, #28b485);
     -webkit-background-clip: text;
     color: transparent; }
   .feature-box:hover {
@@ -297,8 +298,10 @@ body {
 
 .section-features {
   padding: 20rem 0;
-  background-image: linear-gradient(to right top, rgba(126, 213, 111, 0.4), rgba(40, 180, 133, 0.6)), url("../img/nat-4.jpg");
-  background-size: cover; }
+  background-image: linear-gradient(to right top, rgba(0, 32, 63, 0.6), rgba(173, 239, 209, 0.4)), url("../img/mysky.jpg");
+  background-size: cover;
+  transform: skewY(-7deg);
+  margin-top: -10rem; }
 
 /*
 colors 
