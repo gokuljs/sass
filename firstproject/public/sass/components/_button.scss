@@ -11,6 +11,10 @@
         font-size: 1.6rem;
     }
     /* btn white is only playing a major role in coloring ur elements  */
+    &--green {
+        background-color: $color-primary;
+        color: #eee;
+    }
     &--white {
         background-color: #fff;
         color: #777;

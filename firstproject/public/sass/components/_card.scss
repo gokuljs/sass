@@ -2,7 +2,7 @@
     perspective: 150rem;
     -moz-perspective: 150rem;
     position: relative;
-    height: 50rem;
+    height: 53rem;
     // background-color: orange;
     // height: 50rem;
     // transition: all .8s;
@@ -29,6 +29,12 @@
                 // background-color: blue;
                 background-image: linear-gradient(to right bottom, $color-secondary-light, $color-secondary-dark);
             }
+            &--2 {
+                background-image: linear-gradient(to right bottom, #05F9FF, #06CED3);
+            }
+            &--3 {
+                background-image: linear-gradient(to right bottom, #A7FF00, #7DFF00);
+            }
         }
     }
     &:hover &__side--front {
@@ -45,14 +51,16 @@
         background-blend-mode: color-burn;
         -webkit-clip-path: polygon(0 0, 100% 0, 100% 84%, 0% 99%);
         clip-path: polygon(0 0, 100% 0, 100% 84%, 0% 99%);
+        border-top-left-radius: 3px;
+        border-top-right-radius: 3px;
         &--1 {
             background-image: linear-gradient(to right bottom, $color-secondary-light, $color-secondary-dark), url(../img/nat-5.jpg);
         }
         &--2 {
-            background-image: url(../img/nat-5.jpg);
+            background-image: linear-gradient(to right bottom, #05F9FF, #06CED3), url(../img/mymountain.jpg), ;
         }
         &--3 {
-            background-image: url(../img/nat-5.jpg );
+            background-image: linear-gradient(to right bottom, #A7FF00, #7DFF00), url(../img/myforest.jpg );
         }
     }
     &__heading {
@@ -79,5 +87,44 @@
             // background-color: orange;
             // background-blend-mode: color-burn;
         }
+    }
+    &__details {
+        padding: 2rem;
+        ul {
+            list-style: none;
+            width: 80%;
+            margin: 0 auto;
+            color: black;
+            li {
+                font-size: 1.5rem;
+                text-align: center;
+                padding: 1rem;
+                &:not(last-child) {
+                    border-bottom: 1px solid $color-grey-light-2;
+                }
+            }
+        }
+    }
+    // backside styling
+    &__cta {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        text-align: center;
+        // width: 90%;
+    }
+    &__price-box {
+        color: $color-white;
+        margin-bottom: 8rem;
+    }
+    &__price-only {
+        font-size: 1.4rem;
+        text-transform: uppercase;
+    }
+    &__price-value {
+        font-size: 6rem;
+        font-weight: 100;
+        margin-bottom: 10rem;
     }
 }
