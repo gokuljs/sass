@@ -7,7 +7,7 @@
 
 .section-features {
     padding: 20rem 0;
-    background-image: linear-gradient( to right top, rgba($color-my-blue, 0.6), rgba($color-my-green, 0.4)), url("../img/mysky.jpg");
+    background-image: linear-gradient( to right top, rgba(#101010, 0.6), rgba( #484848, 0.4)), url("../img/mysky.jpg");
     background-size: cover;
     // another way of adding skew section with using clipath property
     transform: skewY(-7deg);
