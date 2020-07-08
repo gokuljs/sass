@@ -3,7 +3,7 @@
     /* 
      above line tells us that at every point the height of this box should be 95%
      */
-    background-image: linear-gradient( to right top, rgba($color-primary-light, 0.2), rgba($color-orange, 0.3)), url("../img/myspace.jpg");
+    background-image: linear-gradient( to right top, rgba(#0F2027, 0.2), rgba(#2C5364, 0.3)), url("../img/myspace.jpg");
     background-size: cover;
     /* what cover does is it will adjust according to his height and wwidth of the hreader file  */
     -webkit-clip-path: polygon(0 0, 100% 0%, 100% 73%, 0 100%);
