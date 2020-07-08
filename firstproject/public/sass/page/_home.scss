@@ -31,3 +31,23 @@
     // background-color: $color-grey-light-1;
     position: relative;
 }
+
+.section-book {
+    padding: 15rem 0;
+    background: #FFE000;
+    /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #799F0C, #FFE000);
+    /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #799F0C, #FFE000);
+    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+.book {
+    // background-image: linear-gradient(105, rgba($color-white, .9), orangered), url(/img/nat-10.jpg);
+    background-image: linear-gradient( 105deg, rgba($color-white, 0.8) 0%, rgba($color-white, 0.7) 50%, transparent 50%), url("../img/nat-10.jpg");
+    background-size: 100%;
+    border-radius: 3px;
+    background-repeat: no-repeat;
+    box-shadow: 0 1.5 4rem;
+    height: 50rem;
+}
